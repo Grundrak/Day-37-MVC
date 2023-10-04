@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 const router = require('./routes/route.js');
-app.use('/post', router);
+app.use(router);
 
 
 app.listen(port, () => {
